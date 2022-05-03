@@ -1,0 +1,13 @@
+<table id="login-table" width="100%" cellspacing="0" cellpadding="0" style="color: white;"> 
+  <th>
+    <br />
+    <input type="text" id="input-email" name="email" placeholder="Email"></input>
+    <br />
+    <input type="password" id="input-password" name="password" placeholder="Password"></input>
+    <br />
+    <br />
+    <div class="custom-button" id="button-login" onclick="lightupOnClick('button-login')" ontouchstart="this.className='custom-button-over';" ontouchend="this.className='custom-button';"> 
+      <div id="login-button" onclick="sendRequest(Requests.Login); clearAlert();">Login</div>
+    </div>
+  </th>
+</table>

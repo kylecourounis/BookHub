@@ -1,0 +1,53 @@
+<div style="width: 90%; margin: auto;">
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+      <td>
+        <table cellspacing="0" cellpadding="0" width="100%" >
+          <tr>
+            <th id="popup-header" class="popup-header">Settings</th>
+            <img class="popup-close-button" onclick="closePopup()" src="assets/images/close.png" />
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="popup" class="popup">
+          <table cellspacing="0" cellpadding="1" width="300" >
+            <br />
+            <tr>
+              Basic Information:
+              <br />
+              <input type="text" id="input-name" name="name" placeholder="Full Name"></input>
+              <br />
+              <input type="text" id="input-email" name="email" placeholder="Email"></input>
+              <br />
+              <input type="password" id="input-password" name="password" placeholder="Password"></input>
+              <br />
+              <select class="custom-select" id="input-college" name="college">
+                <option value="" disabled selected>Select Your College...</option>
+              </select>
+            </tr>
+            <br />
+            <br />
+            <tr>
+              Payment Information:
+              <br />
+              <input type="text" id="input-cc" name="credit-card" placeholder="Credit Card"></input>
+              <br />
+              <input type="text" id="input-expiration" name="cc-expiration" placeholder="MM/YY"></input>
+              <input type="text" id="input-cvv" name="cvv" placeholder="CVV"></input>
+            </tr>
+            <br />
+            <br />
+            <tr>
+              <div class="custom-button" id="custom-button-ok" onclick="lightupOnClick('custom-button-ok')" ontouchstart="this.className='custom-button-over';" ontouchend="this.className='custom-button';"> 
+                <div onclick="sendRequest(Requests.UpdateAccountInfo)">Save</div>
+              </div>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

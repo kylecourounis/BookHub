@@ -1,0 +1,21 @@
+<table width="100%" cellspacing="0" cellpadding="0" style="color: white;"> 
+  <th>
+    <br />
+    <input type="text" id="input-isbn" name="isbn" placeholder="ISBN"></input>
+    <br />
+    <select class="custom-select" id="input-condition" name="condition">
+      <option value="" disabled selected>Condition...</option>
+      <option value="0">Poor</option>
+      <option value="1">Fair</option>
+      <option value="2">Good</option>
+      <option value="3">Excellent</option>
+    </select>
+    <input type="text" inputmode="decimal" pattern="\d*" id="input-price" name="price" placeholder="Price"></input>
+    <textarea rows="5" cols ="20" id="input-sellers-notes" name="sellers-notes" placeholder="Seller's Notes (e.g. How useful the book was for the class, etc.)" style="resize: none;"></textarea>
+    <br />
+    <br />
+    <div class="custom-button" id="button-add-listing" onclick="lightupOnClick('button-add-listing')" ontouchstart="this.className='custom-button-over';" ontouchend="this.className='custom-button';" style="transition: 0.5s;"> 
+      <div onclick="sendRequest(Requests.AddListing)">Add</div>
+    </div>
+  </th>
+</table>

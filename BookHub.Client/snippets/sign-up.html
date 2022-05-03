@@ -1,0 +1,15 @@
+<table width="100%" cellspacing="0" cellpadding="0" style="color: white;"> 
+  <th>
+    <br />
+    <input type="text" id="input-name" name="name" placeholder="Full Name"></input>
+    <br />
+    <select class="custom-select" id="input-college" name="college">
+      <option value="" disabled selected>Select Your College...</option>
+    </select>
+    <br />
+    <br />
+    <div class="custom-button" id="custom-button-ok" onclick="lightupOnClick('custom-button-ok')" ontouchstart="this.className='custom-button-over';" ontouchend="this.className='custom-button';"> 
+      <div onclick="sendRequest(Requests.UpdateAccountInfo)">Submit</div>
+    </div>
+  </th>
+</table>

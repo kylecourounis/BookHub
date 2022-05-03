@@ -1,0 +1,30 @@
+<div class="purchase-header">
+  <div style="display:block; float:left;">
+    <img id="book-thumbnail2" width="100" height="130">
+  </div>
+  <span id="seed-storage" style="display: none;"></span> <!--This is just to store the seed-->
+  <div style="margin-left: 115px;">
+    <strong><div class="text"><span id="book-title2"></span></div></strong>
+    <br />
+    <br />
+    <div class="small-text"><i style="color: #686868;">authors: </i><span id="author-names2" style="color: black;"></span></div>
+    <div class="small-text"><i style="color: #686868;">seller: </i><span id="seller-name2" style="color: black;"></span></div>
+    <div class="small-text"><i style="color: #686868;">condition: </i><span id="condition2"></span></div>
+    <br />
+    <strong><div id="price2" style="color: green;"></div></strong>
+  </div>
+</div>
+<table width="100%" cellspacing="0" cellpadding="0" style="color: white;"> 
+  <th>
+    <br />
+    <input type="text" id="input-cc" name="credit-card" placeholder="Credit Card"></input>
+    <br />
+    <input type="text" id="input-expiration" name="cc-expiration" placeholder="MM/YY"></input>
+    <input type="text" id="input-cvv" name="cvv" placeholder="CVV"></input>
+    <br />
+    <br />
+    <div class="custom-button" id="custom-button-ok" onclick="lightupOnClick('custom-button-ok')" ontouchstart="this.className='custom-button-over';" ontouchend="this.className='custom-button';"> 
+      <div onclick="sendRequest(Requests.BuyListing)">Buy</div>
+    </div>
+  </th>
+</table>

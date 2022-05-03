@@ -1,0 +1,12 @@
+/* 
+ * A unified CSS file that allows me to keeps things organized without
+ * linking a million different stylesheets in the HTML file(s).
+*/
+@import url("css/general.css");
+@import url("css/header.css");
+@import url("css/carousel.css");
+@import url("css/table.css");
+@import url("css/popup.css");
+@import url("css/buttons.css");
+@import url("css/inputs.css");
+@import url("css/alert.css");

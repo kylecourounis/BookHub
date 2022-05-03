@@ -1,0 +1,95 @@
+<html>
+<head>
+  <title>BookHub</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="minimal-ui, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+  <script type="text/javascript" src="scripts/library/jquery.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+  
+  <link rel="manifest" href="assets/manifest.webmanifest">
+
+  <link rel="icon" sizes="256x256" href="assets/images/icon.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="assets/images/icon.png">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+  <div id="glow" style="position:absolute;display:none;z-index:100;background:url('./assets/images/glow.png') center center no-repeat; width:80px; height:80px;"></div>
+
+  <div class="loader-container">
+  </div>
+  <div id="loader"></div>
+  
+  <div id="popup-container"></div>
+  
+  <div id="darken"></div>
+  
+  <div id="alert-container"></div>
+
+  <div class="bar" id="header">
+    <img class="header-button" id="button-back" src="assets/images/back.png" ontouchstart="glow('button-back');" ontouchend="noGlow();" onclick="backButtonClick()" />
+    <img class="header-button" id="button-settings" src="assets/images/settings.png" ontouchstart="glow('button-settings');" ontouchend="noGlow();" onclick="settingsButtonClick()" />
+    <span id="header-txt"><img src="assets/images/transparent-logo.png" width="100px" /></span>
+    <img class="header-button" id="button-search" src="assets/images/search.png" ontouchstart="glow('button-search');" ontouchend="noGlow();" onclick="searchButtonClick()" />
+  </div>
+
+  <div id="search-bar">
+    <input type="text" style="margin-top: 5px;" id="input-search" name="search" placeholder="Search for a book title, author, or ISBN..."></input>
+  </div>
+
+  <div id="wrapper">
+    <div class="container" id="login" style="top: 30%;">
+    </div>
+  
+    <div class="container" id="home" style="top: 40px;">
+    </div>
+
+    <div class="container" id="purchases" style="top: 40px;">
+    </div>
+
+    <div class="container" id="add-listing" style="top: 40px;">
+    </div>
+
+    <div class="container" id="listings">
+    </div>
+
+    <div class="container" id="listing" style="top: 40px;">
+    </div>
+
+    <div class="container" id="purchase" style="top: 40px;">
+    </div>
+
+    <div class="container" id="orders">
+    </div>
+  </div>
+  
+  <div class="bar" id="footer">
+    <img class="header-button" id="button-orders" src="assets/images/orders.png" ontouchstart="glow('button-orders');" ontouchend="noGlow();" onclick="ordersButtonClicked()" />
+    <img class="header-button" id="button-add" src="assets/images/add.png" ontouchstart="glow('button-add');" ontouchend="noGlow();" onclick="addButtonClick()" />
+  </div>
+
+  <script type="text/javascript" src="scripts/helpers/html.js"></script>
+  <script type="text/javascript" src="scripts/protocol/client.js"></script>
+
+  <script type="text/javascript" src="scripts/pages/page.js"></script>
+  <!-- Individual Screens -->
+  <script type="text/javascript" src="scripts/pages/login-signup.js"></script>
+  <script type="text/javascript" src="scripts/pages/home.js"></script>
+  <script type="text/javascript" src="scripts/pages/add-listing.js"></script>
+  <script type="text/javascript" src="scripts/pages/listings.js"></script>
+  <script type="text/javascript" src="scripts/pages/listing.js"></script>
+  <script type="text/javascript" src="scripts/pages/purchase.js"></script>
+  <script type="text/javascript" src="scripts/pages/orders.js"></script>
+  <!---->
+
+  <script type="text/javascript" src="scripts/index.js"></script>
+  <script type="text/javascript" src="scripts/helpers/buttons.js"></script>
+  <script type="text/javascript" src="scripts/helpers/tables.js"></script>
+</body>
+</html>

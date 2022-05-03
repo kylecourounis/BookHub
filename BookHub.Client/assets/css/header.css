@@ -1,0 +1,62 @@
+/*
+ *  
+ */
+.bar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  align-content: center;
+  text-align: center;
+  background-image: linear-gradient(#319bff, #0071bd);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+  color: white;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#header {
+  display: block;
+  top: 0;
+  bottom: 25px;
+}
+
+#header-txt {
+  position: sticky;
+  top: 6px;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+#footer {
+  bottom: -60px;
+  transition: all .3s ease-out;
+}
+
+#footer.slideup {
+  bottom: 0;
+}
+
+/*
+ * This is the container for the search bar that pulls down below the header. 
+ * The actual styling of the input box can be found in the inputs.css file.
+*/
+#search-bar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  top: -70px;
+  align-content: center;
+  text-align: center;
+  background-image: linear-gradient(#0071bd, #319bff);
+  color: white;
+  overflow: hidden;
+  transition: all .3s ease-out;
+  z-index: 5;
+}
+
+#search-bar.slidedown {
+  top: 50px;
+}

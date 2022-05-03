@@ -1,0 +1,56 @@
+/* Header & Footer Buttons */
+.header-button {
+  position: absolute;
+  width: 35px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#button-add {
+  display: block;
+  bottom: 6px; right: 7px;
+}
+
+#button-orders {
+  display: block;
+  bottom: 6px; left: 7px;
+}
+
+#button-search {
+  display: none;
+  bottom: 6px; right: 7px;
+}
+
+#button-back {
+  display: none;
+  bottom: 6px; left: 7px;
+}
+
+#button-settings {
+  display: none;
+  bottom: 6px; left: 7px;
+}
+
+/* Styling for the buttons you see in menus. */
+.custom-button, .custom-button-over {
+  position: relative;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  padding: 5px;
+  border: 1px inset rgba(50,50,50,0.75); border-radius: 5px;
+  font-family: Helvetica, Arial; font-weight: bold;
+  color: white;
+}
+
+.custom-button {
+  box-shadow: 0 1px 0 #ccc; text-shadow: 0 -1px 0 #000;
+  background-image: linear-gradient(#319bff, #0071bd);    
+}
+
+.custom-button-over {
+  box-shadow: 0 1px 0 #ccc; text-shadow: 0 0 5px rgba(255,255,255,0.5);
+  background-image: linear-gradient(#7abfff, #2f92d4);
+}

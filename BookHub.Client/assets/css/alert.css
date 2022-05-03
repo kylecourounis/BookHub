@@ -1,0 +1,37 @@
+/* Styling for the alert boxes */
+#alert-container {
+  transition: all .3s ease-out;
+}
+
+#alert-container.slidedown {
+  margin-top: 50px;
+}
+
+.alert {
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alert.error {
+  background-color: #F44336;
+}
+
+.alert.warning {
+  background-color: #FFDA34E2;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

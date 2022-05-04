@@ -1,7 +1,7 @@
 # BookHub
 I took a class at my college called Software Systems & Analysis. Throughout the semester, you and your group go through the Software Development Life Cycle to design a "system." The group I was a part of designed an application where college students can resell their used textbooks and other related academic materials to other students on their campus.
 
-Since it's mostly freshman and a few sophomores in the class, most students do not have much programming experience yet, and thus there is no requirement to build a functioning version of your application. However, since I did have the knowledge and experience, I decided to build a working version of our application just for kicks. 
+Since it's not a programming class, there is no requirement to build a functioning version of your application. However, since I had the knowledge and experience, I decided to build a working version of our application just for kicks.
 
 ## How It Works
 This is a relatively simple application. The client is a progressive web app (PWA) and the server is written in C#. The server and client talk to each other, data is cached and subsequently saved in a database, and it pulls information about the textbooks from the Google Books API based soley from the ISBN. The one major thing both sides lack is encryption, however, I wanted to make sure things were in plain text for easy demonstration for the class.
